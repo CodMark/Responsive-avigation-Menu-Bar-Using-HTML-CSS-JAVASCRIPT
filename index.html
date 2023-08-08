@@ -4,46 +4,41 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <!--=============== REMIXICONS ===============-->
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-   <!--=============== CSS ===============-->
-   <link rel="stylesheet" href="assets/css/styles.css">
-
-   <title>Dropdown menu - Codmark</title>
+   <title>Responsive navigation bar - Fox Code</title>
+   <link rel="stylesheet" href="./style.css">
+   <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
 </head>
 
 <body>
-   <div class="container">
-      <div class="dropdown" id="dropdown-content">
-         <button class="dropdown_button" id="dropdown-btn">
-            <i class="ri-user-3-line dropdown__icon"></i>
-            <span class="dropdown__name">My profile</span>
-
-            <div class="dropdown__icons">
-               <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-               <i class="ri-close-line dropdown__close"></i>
-            </div>
-         </button>
-         <ul class="dropdown__menu">
-            <li class="dropdown__item">
-               <i class="ri-message-3-line dropdown__icon"></i>
-               <span class="dropdown__name">Messages</span>
-            </li>
-            <li class="dropdown__item">
-               <i class="ri-lock-line dropdown__icon"></i>
-               <span class="dropdown__name">Accounts</span>
-            </li>
-            <li class="dropdown__item">
-               <i class="ri-settings-3-line dropdown__icon"></i>
-               <span class="dropdown__name">Settings</span>
-            </li>
-         </ul>
+   <main id="main_box">
+      <nav>
+         <div class="logo_name">
+            Fox Code
+         </div>
+         <div class="menu_btn">
+            <i class="fi fi-sr-bars-staggered" onclick="opennav()"></i>
+         </div>
+      </nav>
+      <div class="box_a">
+         Home
+      </div>
+   </main>
+   <div class="sid_navbar" id="navbar">
+      <div class="close_box"><i class="fi fi-sr-cross-small" onclick="opennav()"></i></div>
+      <div class="logo_box">
+         <div class="logo_box_img"></div>
+         <p>Hi, I'm</p>
+         <h1>Fox Code</h1>
+      </div>
+      <div class="btn_box">
+         <a href="#"><i class="fi fi-sr-home"></i> Home</a>
+         <a href="#"><i class="fi fi-sr-info"></i> About</a>
+         <a href="#"><i class="fi fi-sr-briefcase"></i> Portfolio</a>
+         <a href="#"><i class="fi fi-sr-trophy-star"></i> Skills</a>
+         <a href="#"><i class="fi fi-sr-form"></i> Contact</a>
       </div>
    </div>
-
 </body>
-<script src="assets/js/main.js"></script>
+<script src="./home.js"></script>
 
 </html>
