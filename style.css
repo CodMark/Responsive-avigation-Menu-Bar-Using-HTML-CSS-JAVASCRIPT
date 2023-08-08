@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   transition: 0.2s;
+}
+
+body {
+   font-family: 'Poppins', sans-serif;
+   overflow: hidden;
+   background-color: #81b8ff;
+}
+
+main {
+   width: 100%;
+   height: 100vh;
+   background-color: white;
+}
+
+nav {
+   width: 100%;
+   height: 3rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 12px;
+   padding-right: 12px;
+}
+
+.logo_name {
+   font-weight: 500;
+}
+
+.menu_btn i {
+   font-size: 22px;
+   cursor: pointer;
+}
+
+.sid_navbar {
+   position: fixed;
+   left: -16rem;
+   top: 0;
+   width: 13rem;
+   height: 100%;
+   background: linear-gradient(90deg,#ada1fd,#81b8ff);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   gap: 1.5rem;
+}
+
+.show_nav {
+   left: 0rem !important;
+}
+
+.slide_box {
+   width: 83% !important;
+   margin-left: 15rem;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+   position: relative;
+}
+
+.slide_box::before {
+   content: "";
+   width: 2rem;
+   height: 93vh;
+   background: rgba(255, 255, 255, 0.671);
+   position: absolute;
+   left: -30px;
+   z-index: 1;
+   top: 23px;
+   border-top-left-radius: 20px;
+   border-bottom-left-radius: 20px;
+}
+
+.box_a {
+   padding-left: 12px;
+   margin-top: 11px;
+   font-size: 16px;
+}
+
+.close_box i{
+   color: white;
+   font-size: 23px;
+   cursor: pointer;
+}
+
+.logo_box{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   color: white;
+}
+
+.logo_box_img {
+   width: 5rem;
+   height: 5rem;
+   background: url('./img/man1.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 27px;
+
+}
+.logo_box p{
+   color: #e6f0fc;
+   margin-top: 10px;
+}
+
+.btn_box{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 1.5rem;
+   align-items: flex-start;
+}
+.btn_box a{
+   text-decoration: none;
+   color: #d5e7ff;
+}
+
+.btn_box a:hover{
+   color: white;
+}
+
+.btn_box a:nth-child(1){
+   color: white;
+}
